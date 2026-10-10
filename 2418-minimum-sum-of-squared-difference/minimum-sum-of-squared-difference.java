@@ -26,12 +26,5 @@ class Solution {
       k -= numDecreased;
       if (maxNumFreq > numDecreased)
         maxHeap.offer(new Pair<>(maxNum, maxNumFreq - numDecreased));
-      if (!maxHeap.isEmpty() && maxHeap.peek().getKey() + 1 == maxNum) {
-        Pair<Integer, Integer> secondNode = maxHeap.poll();
-        final int secondMaxNum = secondNode.getKey();
-        final int secondMaxNumFreq = secondNode.getValue();
-        maxHeap.offer(new Pair<>(secondMaxNum, secondMaxNumFreq + numDecreased));
-      } else if (maxNum > 1) {
-        maxHeap.offer(new Pair<>(maxNum - 1, numDecreased));
-   
+     
   
