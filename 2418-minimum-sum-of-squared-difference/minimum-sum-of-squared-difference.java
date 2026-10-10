@@ -20,11 +20,4 @@ class Solution {
     while (k > 0) {
       Pair<Integer, Integer> pair = maxHeap.poll();
       final int maxNum = pair.getKey();
-      final int maxNumFreq = pair.getValue();
-      // Buck decrease in this turn
-      final int numDecreased = Math.min(k, maxNumFreq);
-      k -= numDecreased;
-      if (maxNumFreq > numDecreased)
-        maxHeap.offer(new Pair<>(maxNum, maxNumFreq - numDecreased));
-     
-  
+    
