@@ -11,7 +11,4 @@ class Solution {
         const int k = stones[i] - stones[j];
         if (k > n)
           continue;
-        for (const int x : {k - 1, k, k + 1})
-          if (0 <= x && x <= n)
-            dp[i][k] = dp[i][k] || dp[j][x];
-      
+   
