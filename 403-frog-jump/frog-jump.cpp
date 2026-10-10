@@ -12,10 +12,4 @@ class Solution {
         if (k > n)
           continue;
         for (const int x : {k - 1, k, k + 1})
-          if (0 <= x && x <= n)
-            dp[i][k] = dp[i][k] || dp[j][x];
-      }
-
-    return ranges::any_of(dp.back(), [](bool val) { return val; });
-  }
-};
+     
