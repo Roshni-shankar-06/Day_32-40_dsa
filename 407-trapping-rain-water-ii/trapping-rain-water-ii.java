@@ -13,11 +13,4 @@ class Solution {
       minHeap.offer(new T(i, 0, heightMap[i][0]));
       minHeap.offer(new T(i, n - 1, heightMap[i][n - 1]));
       seen[i][0] = true;
-      seen[i][n - 1] = true;
-    }
-
-    for (int j = 1; j < n - 1; ++j) {
-      minHeap.offer(new T(0, j, heightMap[0][j]));
-      minHeap.offer(new T(m - 1, j, heightMap[m - 1][j]));
-      seen[0][j] = true;
    
