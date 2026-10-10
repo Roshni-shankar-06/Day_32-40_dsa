@@ -44,13 +44,4 @@ class Solution {
       ans += (long) num * num * freq;
     }
 
-    return ans;
-  }
-
-  private int[] getDiff(int[] nums1, int[] nums2) {
-    int[] diff = new int[nums1.length];
-    for (int i = 0; i < nums1.length; ++i)
-      diff[i] = Math.abs(nums1[i] - nums2[i]);
-    return diff;
-  }
-}
+  
