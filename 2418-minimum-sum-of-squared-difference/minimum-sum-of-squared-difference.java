@@ -33,15 +33,5 @@ class Solution {
         maxHeap.offer(new Pair<>(secondMaxNum, secondMaxNumFreq + numDecreased));
       } else if (maxNum > 1) {
         maxHeap.offer(new Pair<>(maxNum - 1, numDecreased));
-      }
-    }
-
-    long ans = 0;
-    while (!maxHeap.isEmpty()) {
-      Pair<Integer, Integer> pair = maxHeap.poll();
-      final int num = pair.getKey();
-      final int freq = pair.getValue();
-      ans += (long) num * num * freq;
-    }
-
+   
   
