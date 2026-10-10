@@ -20,12 +20,4 @@ class Solution {
       minHeap.offer(new T(0, j, heightMap[0][j]));
       minHeap.offer(new T(m - 1, j, heightMap[m - 1][j]));
       seen[0][j] = true;
-      seen[m - 1][j] = true;
-    }
-
-    while (!minHeap.isEmpty()) {
-      final int i = minHeap.peek().i;
-      final int j = minHeap.peek().j;
-      final int h = minHeap.poll().h;
-      for (int[] dir : DIRS) {
-      
+   
