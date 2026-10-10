@@ -5,10 +5,3 @@ class Solution {
     if (Arrays.stream(diff).asLongStream().sum() <= k)
       return 0;
 
-    Map<Integer, Integer> count = new HashMap<>();
-    // (num, freq)
-    Queue<Pair<Integer, Integer>> maxHeap =
-        new PriorityQueue<>(Comparator.comparing(Pair::getKey, Comparator.reverseOrder()));
-
-    for (final int d : diff)
-  
