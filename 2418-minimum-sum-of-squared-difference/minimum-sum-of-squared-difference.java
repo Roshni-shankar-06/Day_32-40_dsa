@@ -11,13 +11,4 @@ class Solution {
         new PriorityQueue<>(Comparator.comparing(Pair::getKey, Comparator.reverseOrder()));
 
     for (final int d : diff)
-      if (d != 0)
-        count.merge(d, 1, Integer::sum);
-
-    for (Map.Entry<Integer, Integer> entry : count.entrySet())
-      maxHeap.offer(new Pair<>(entry.getKey(), entry.getValue()));
-
-    while (k > 0) {
-      Pair<Integer, Integer> pair = maxHeap.poll();
-      final int maxNum = pair.getKey();
-    
+  
