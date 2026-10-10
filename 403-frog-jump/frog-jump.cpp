@@ -8,8 +8,4 @@ class Solution {
 
     for (int i = 1; i < n; ++i)
       for (int j = 0; j < i; ++j) {
-        const int k = stones[i] - stones[j];
-        if (k > n)
-          continue;
-        for (const int x : {k - 1, k, k + 1})
-     
+       
