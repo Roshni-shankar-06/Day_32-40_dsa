@@ -3,10 +3,6 @@ class Solution {
     int[] ans = new int[k];
     Pair<Integer, Integer>[] rowSums = new Pair[mat.length];
 
-    for (int i = 0; i < mat.length; ++i)
-      rowSums[i] = new Pair<>(Arrays.stream(mat[i]).sum(), i);
-
-    Arrays.sort(rowSums, Comparator.comparingInt(Pair<Integer, Integer>::getKey)
-                             .thenComparingInt(Pair<Integer, Integer>::getValue));
+ .thenComparingInt(Pair<Integer, Integer>::getValue));
 
    
