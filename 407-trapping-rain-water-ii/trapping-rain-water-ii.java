@@ -37,13 +37,4 @@ class Solution {
         if (heightMap[x][y] < h) {
           ans += h - heightMap[x][y];
           minHeap.offer(new T(x, y, h)); // Fill water in grid[x][y].
-        } else {
-          minHeap.offer(new T(x, y, heightMap[x][y]));
-        }
-        seen[x][y] = true;
-      }
-    }
-
-    return ans;
-  }
-}
+        
