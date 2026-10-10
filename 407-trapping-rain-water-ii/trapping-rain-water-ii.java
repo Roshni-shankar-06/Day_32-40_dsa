@@ -28,13 +28,4 @@ class Solution {
       final int j = minHeap.peek().j;
       final int h = minHeap.poll().h;
       for (int[] dir : DIRS) {
-        final int x = i + dir[0];
-        final int y = j + dir[1];
-        if (x < 0 || x == m || y < 0 || y == n)
-          continue;
-        if (seen[x][y])
-          continue;
-        if (heightMap[x][y] < h) {
-          ans += h - heightMap[x][y];
-          minHeap.offer(new T(x, y, h)); // Fill water in grid[x][y].
-        
+      
