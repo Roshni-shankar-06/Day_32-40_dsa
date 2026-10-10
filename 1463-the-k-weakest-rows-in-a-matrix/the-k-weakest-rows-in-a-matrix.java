@@ -9,9 +9,4 @@ class Solution {
     Arrays.sort(rowSums, Comparator.comparingInt(Pair<Integer, Integer>::getKey)
                              .thenComparingInt(Pair<Integer, Integer>::getValue));
 
-    for (int i = 0; i < k; ++i)
-      ans[i] = rowSums[i].getValue();
-
-    return ans;
-  }
-}
+   
