@@ -7,10 +7,4 @@ class Solution {
     final int n = heightMap[0].length;
     int ans = 0;
     Queue<T> minHeap = new PriorityQueue<>(Comparator.comparingInt(T::h));
-    boolean[][] seen = new boolean[m][n];
 
-    for (int i = 0; i < m; ++i) {
-      minHeap.offer(new T(i, 0, heightMap[i][0]));
-      minHeap.offer(new T(i, n - 1, heightMap[i][n - 1]));
-      seen[i][0] = true;
-   
