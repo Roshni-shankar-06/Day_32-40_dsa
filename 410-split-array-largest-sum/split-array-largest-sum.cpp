@@ -15,7 +15,5 @@ class Solution {
                  const vector<int>& prefix, vector<vector<int>>& mem) {
     if (k == 1)
       return prefix[i];
-    if (mem[i][k] < INT_MAX)
-      return mem[i][k];
 
     
