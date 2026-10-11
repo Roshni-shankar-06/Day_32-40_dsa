@@ -22,7 +22,3 @@ class Solution {
     for (int j = k - 1; j < i; ++j)
       mem[i][k] = min(mem[i][k], max(splitArray(nums, j, k - 1, prefix, mem),
                                      prefix[i] - prefix[j]));
-
-    return mem[i][k];
-  }
-};
