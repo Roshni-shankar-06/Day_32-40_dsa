@@ -13,10 +13,4 @@ class Solution:
 
     i = 2
     while i < n:
-      if password[i] == password[i - 1] and password[i - 1] == password[i - 2]:
-        length = 2  # the length of the repeating password
-        while i < n and password[i] == password[i - 1]:
-          length += 1
-          i += 1
-        replaces += length // 3  # 'aaaaaaa' -> 'aaxaaxa'
      
