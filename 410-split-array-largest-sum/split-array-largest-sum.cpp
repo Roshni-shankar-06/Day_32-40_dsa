@@ -13,7 +13,5 @@ class Solution {
   // groups.
   int splitArray(const vector<int>& nums, int i, int k,
                  const vector<int>& prefix, vector<vector<int>>& mem) {
-    if (k == 1)
-      return prefix[i];
 
     
