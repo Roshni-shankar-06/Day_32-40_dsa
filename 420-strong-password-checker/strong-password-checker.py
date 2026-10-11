@@ -19,10 +19,4 @@ class Solution:
           length += 1
           i += 1
         replaces += length // 3  # 'aaaaaaa' -> 'aaxaaxa'
-        if length % 3 == 0:
-          oneSeq += 1
-        if length % 3 == 1:
-          twoSeq += 1
-      else:
-        i += 1
-
+     
