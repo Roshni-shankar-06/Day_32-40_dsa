@@ -18,7 +18,4 @@ class Solution {
     if (mem[i][k] < INT_MAX)
       return mem[i][k];
 
-    // Try all the possible partitions.
-    for (int j = k - 1; j < i; ++j)
-      mem[i][k] = min(mem[i][k], max(splitArray(nums, j, k - 1, prefix, mem),
-                                     prefix[i] - prefix[j]));
+    
