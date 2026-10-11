@@ -26,13 +26,3 @@ class Solution:
       else:
         i += 1
 
-    if n < 6:
-      return max(6 - n, missing)
-    if n <= 20:
-      return max(replaces, missing)
-
-    deletes = n - 20
-    # Each replacement in (3k)-seqs can be substituted with 1 deletions.
-    replaces -= min(oneSeq, deletes)
-    # Each replacement in (3k + 1)-seqs can be substituted with 2 deletions.
- 
