@@ -8,10 +8,3 @@ class Solution {
     return splitArray(nums, n, k, prefix, mem);
   }
 
- private:
-  // Returns the minimum of the maximum sum to split the first i numbers into k
-  // groups.
-  int splitArray(const vector<int>& nums, int i, int k,
-                 const vector<int>& prefix, vector<vector<int>>& mem) {
-
-    
