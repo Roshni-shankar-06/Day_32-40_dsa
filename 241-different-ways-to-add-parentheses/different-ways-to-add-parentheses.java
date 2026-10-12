@@ -11,8 +11,4 @@ class Solution {
 
     for (int i = 0; i < s.length(); ++i)
       if (!Character.isDigit(s.charAt(i)))
-        for (final int a : ways(s.substring(0, i), mem))
-          for (final int b : ways(s.substring(i + 1), mem))
-            if (s.charAt(i) == '+')
-              ans.add(a + b);
-          
+      
