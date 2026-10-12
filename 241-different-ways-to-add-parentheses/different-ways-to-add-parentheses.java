@@ -3,7 +3,3 @@ class Solution {
     return ways(expression, new HashMap<>());
   }
 
-  private List<Integer> ways(final String s, Map<String, List<Integer>> mem) {
-    if (mem.containsKey(s))
-      return mem.get(s);
-
