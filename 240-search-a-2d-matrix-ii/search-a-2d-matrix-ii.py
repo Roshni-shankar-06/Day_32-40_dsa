@@ -8,9 +8,3 @@ class Solution:
         return True
       if target < matrix[r][c]:
         c -= 1
-      else:
-        r += 1
-
-    return False
-
-
