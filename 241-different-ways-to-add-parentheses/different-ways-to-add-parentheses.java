@@ -7,8 +7,3 @@ class Solution {
     if (mem.containsKey(s))
       return mem.get(s);
 
-    List<Integer> ans = new ArrayList<>();
-
-    for (int i = 0; i < s.length(); ++i)
-      if (!Character.isDigit(s.charAt(i)))
-      
