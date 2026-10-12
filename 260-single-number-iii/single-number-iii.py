@@ -8,7 +8,3 @@ class Solution:
     for num in nums:
       if num & lowbit:
         ans[0] ^= num
-      else:
-        ans[1] ^= num
-
-    return ans
