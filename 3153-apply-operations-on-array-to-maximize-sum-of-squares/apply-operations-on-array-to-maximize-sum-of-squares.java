@@ -6,8 +6,4 @@ class Solution {
     // minIndices[i] := the minimum index in `optimalNums` that the i-th bit
     // should be moved to
     int[] minIndices = new int[MAX_BIT];
-    int[] optimalNums = new int[nums.size()];
-
-    for (final int num : nums)
-      for (int i = 0; i < MAX_BIT; i++)
-      
+  
