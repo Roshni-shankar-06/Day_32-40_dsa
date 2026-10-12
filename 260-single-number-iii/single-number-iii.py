@@ -5,6 +5,4 @@ class Solution:
     ans = [0, 0]
 
     # Seperate `nums` into two groups by `lowbit`.
-    for num in nums:
-      if num & lowbit:
-        ans[0] ^= num
+ 
