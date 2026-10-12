@@ -21,10 +21,5 @@ class Solution {
               ans.add(a * b);
 
     if (ans.isEmpty()) { // Single number
-      mem.put(s, Arrays.asList(Integer.parseInt(s)));
-      return mem.get(s);
-    }
-    mem.put(s, ans);
-    return ans;
-  }
+  
 }
