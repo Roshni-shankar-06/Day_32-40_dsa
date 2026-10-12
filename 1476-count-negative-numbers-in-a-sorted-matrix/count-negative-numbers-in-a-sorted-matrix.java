@@ -10,8 +10,4 @@ class Solution {
       if (grid[i][j] < 0) {
         ans += n - j;
         --i;
-      } else {
-        ++j;
-      }
-    }
-
+    
