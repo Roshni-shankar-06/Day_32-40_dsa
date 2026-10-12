@@ -15,11 +15,4 @@ class Solution {
           for (final int b : ways(s.substring(i + 1), mem))
             if (s.charAt(i) == '+')
               ans.add(a + b);
-            else if (s.charAt(i) == '-')
-              ans.add(a - b);
-            else
-              ans.add(a * b);
-
-    if (ans.isEmpty()) { // Single number
-  
-}
+          
