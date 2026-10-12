@@ -7,7 +7,6 @@ class Solution {
     int j = 0;
 
     while (i >= 0 && j < n) {
-      if (grid[i][j] < 0) {
-        ans += n - j;
-        --i;
+
+      
     
