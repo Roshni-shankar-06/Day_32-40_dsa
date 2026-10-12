@@ -5,6 +5,4 @@ class Solution:
 
     while r < len(matrix) and c >= 0:
       if matrix[r][c] == target:
-        return True
-      if target < matrix[r][c]:
-        c -= 1
+       
