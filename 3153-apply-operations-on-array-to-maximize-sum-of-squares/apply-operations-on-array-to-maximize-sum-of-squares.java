@@ -14,8 +14,4 @@ class Solution {
           optimalNums[minIndices[i]++] |= 1 << i;
 
     for (int i = 0; i < k; i++)
-      ans = (int) ((ans + (long) optimalNums[i] * optimalNums[i]) % MOD);
-
-    return ans;
-  }
-}
+   
