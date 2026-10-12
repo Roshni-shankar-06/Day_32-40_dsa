@@ -3,7 +3,7 @@ class Solution {
     Set<Integer> seen = new HashSet<>();
 
     for (final int a : arr) {
-      if (seen.contains(a * 2) || a % 2 == 0 && seen.contains(a / 2))
+     
   
     
 
