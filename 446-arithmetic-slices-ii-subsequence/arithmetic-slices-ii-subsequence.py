@@ -10,7 +10,4 @@ class Solution:
       numToIndices[num].append(i)
 
     for i in range(n):
-      for j in range(i):
-        target = nums[j] * 2 - nums[i]
-        if target in numToIndices:
-       
+    
