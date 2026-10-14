@@ -17,10 +17,4 @@ class Solution {
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] == 0) {
                 result[i] = 0; // No numbers are smaller than 0
-            } else {
-                // The number of elements strictly smaller than nums[i] 
-                // is stored in count[nums[i] - 1]
-                result[i] = count[nums[i] - 1];
-            }
-        }
-        
+            } els
