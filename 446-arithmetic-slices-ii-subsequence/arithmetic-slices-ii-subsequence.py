@@ -6,8 +6,3 @@ class Solution:
     dp = [[0] * n for _ in range(n)]
     numToIndices = collections.defaultdict(list)
 
-    for i, num in enumerate(nums):
-      numToIndices[num].append(i)
-
-    for i in range(n):
-    
