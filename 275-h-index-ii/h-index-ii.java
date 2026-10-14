@@ -12,7 +12,4 @@ class Solution {
             
             if (citations[mid] == paperCount) {
                 return paperCount;
-            } else if (citations[mid] < paperCount) {
-                // Not enough citations, look for a larger value to the right
-                left = mid + 1;
-            } els
+            
