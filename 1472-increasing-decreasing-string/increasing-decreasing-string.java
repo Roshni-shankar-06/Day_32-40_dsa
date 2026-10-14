@@ -9,7 +9,3 @@ public class Solution {
         StringBuilder sb = new StringBuilder();
         int totalLength = s.length();
         
-        // Step 2: Simulate the process until the resulting string matches the original length
-        while (sb.length() < totalLength) {
-            // Ascending order pass: pick the smallest available characters ('a' to 'z')
-        
