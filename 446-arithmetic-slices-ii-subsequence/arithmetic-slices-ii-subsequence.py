@@ -13,6 +13,4 @@ class Solution:
       for j in range(i):
         target = nums[j] * 2 - nums[i]
         if target in numToIndices:
-          for k in numToIndices[target]:
-            if k < j:
-              dp[i][j] += dp[j][k] + 1
+       
