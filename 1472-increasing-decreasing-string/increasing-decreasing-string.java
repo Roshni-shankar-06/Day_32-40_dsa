@@ -4,8 +4,4 @@ public class Solution {
         int[] count = new int[26];
         for (char c : s.toCharArray()) {
             count[c - 'a']++;
-        }
-        
-        StringBuilder sb = new StringBuilder();
-        int totalLength = s.length();
-        
+      
