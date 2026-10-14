@@ -60,4 +60,63 @@ class LFUCache {
     private final Map<Integer, Node> cache;
     private final Map<Integer, DoublyLinkedList> freqMap;
 
- 
+    public LFUCache(int capacity) {
+        this.capacity = capacity;
+        this.curSize = 0;
+        this.minFreq = 0;
+        this.cache = new HashMap<>();
+        this.freqMap = new HashMap<>();
+    }
+    
+    public int get(int key) {
+        if (!cache.containsKey(key)) {
+            return -1;
+        }
+        Node node = cache.get(key);
+        updateFrequency(node);
+        return node.value;
+    }
+    
+    public void put(int key, int value) {
+        if (capacity == 0) return;
+        
+        if (cache.containsKey(key)) {
+            Node node = cache.get(key);
+            node.value = value;
+            updateFrequency(node);
+        } else {
+            // Evict if cache is at maximum capacity
+            if (curSize == capacity) {
+                DoublyLinkedList minFreqList = freqMap.get(minFreq);
+                Node toEvict = minFreqList.removeHead();
+                cache.remove(toEvict.key);
+                curSize--;
+            }
+            
+            // Insert the brand new node
+            Node newNode = new Node(key, value);
+            cache.put(key, newNode);
+            minFreq = 1; // Resets minFreq to 1 because a new item always has frequency 1
+            
+            DoublyLinkedList list = freqMap.computeIfAbsent(1, k -> new DoublyLinkedList());
+            list.addNode(newNode);
+            curSize++;
+        }
+    }
+    
+    // Helper function to shift a node to its next higher frequency list
+    private void updateFrequency(Node node) {
+        int oldFreq = node.freq;
+        DoublyLinkedList oldList = freqMap.get(oldFreq);
+        oldList.removeNode(node);
+        
+        // If the current minFreq list is completely cleared out, increment minFreq
+        if (oldFreq == minFreq && oldList.size == 0) {
+            minFreq++;
+        }
+        
+        node.freq++;
+        DoublyLinkedList newList = freqMap.computeIfAbsent(node.freq, k -> new DoublyLinkedList());
+        newList.addNode(node);
+    }
+}
