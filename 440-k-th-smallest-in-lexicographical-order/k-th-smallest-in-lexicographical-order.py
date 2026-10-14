@@ -17,5 +17,4 @@ class Solution:
   def _getGap(self, a: int, b: int, n: int) -> int:
     gap = 0
     while a <= n:
-      gap += min(n + 1, b) - a
-      a *= 10
+   
