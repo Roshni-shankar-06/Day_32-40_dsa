@@ -7,7 +7,4 @@ class Solution {
         StringBuilder sb = new StringBuilder();
 
         while (num > 0) {
-            int digit = Math.min(9, sum);
-            sb.append(digit);
-            s
-   
+          
