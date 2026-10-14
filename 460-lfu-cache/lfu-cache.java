@@ -116,7 +116,4 @@ class LFUCache {
         }
         
         node.freq++;
-        DoublyLinkedList newList = freqMap.computeIfAbsent(node.freq, k -> new DoublyLinkedList());
-        newList.addNode(node);
-    }
-}
+        
