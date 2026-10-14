@@ -13,7 +13,3 @@ class Solution {
         if ((num >> i & 1) == 1)
           optimalNums[minIndices[i]++] |= 1 << i;
 
-    for (int i = 0; i < k; i++)
-      ans = (int) ((ans + (long) optimalNums[i] * optimalNums[i]) % MOD);
-
-  
