@@ -106,8 +106,4 @@ class LFUCache {
     
     // Helper function to shift a node to its next higher frequency list
     private void updateFrequency(Node node) {
-        int oldFreq = node.freq;
-        DoublyLinkedList oldList = freqMap.get(oldFreq);
-        oldList.removeNode(node);
-        
     
