@@ -84,8 +84,4 @@ class LFUCache {
             Node node = cache.get(key);
             node.value = value;
             updateFrequency(node);
-        } else {
-            // Evict if cache is at maximum capacity
-            if (curSize == capacity) {
-                DoublyLinkedList minFreqList = freqMap.get(minFreq);
-               
+       
