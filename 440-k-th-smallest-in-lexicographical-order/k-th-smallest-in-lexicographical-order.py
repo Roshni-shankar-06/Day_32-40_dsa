@@ -12,6 +12,4 @@ class Solution:
         i += 1
         ans *= 10
 
-    return ans
-
-  def _getGap(self, a: int, b: int, n: int) -> int:
+ 
