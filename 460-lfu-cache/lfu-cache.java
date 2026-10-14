@@ -73,11 +73,4 @@ class LFUCache {
             return -1;
         }
         Node node = cache.get(key);
-        updateFrequency(node);
-        return node.value;
-    }
-    
-    public void put(int key, int value) {
-        if (capacity == 0) return;
-        
-    
+      
