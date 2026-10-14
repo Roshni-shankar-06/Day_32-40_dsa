@@ -15,9 +15,4 @@ class Solution {
             } else if (citations[mid] < paperCount) {
                 // Not enough citations, look for a larger value to the right
                 left = mid + 1;
-            } else {
-                // Too many citations or valid candidate, look for a potential larger h-index to the left
-                right = mid - 1;
-            }
-        }
-        
+            } els
