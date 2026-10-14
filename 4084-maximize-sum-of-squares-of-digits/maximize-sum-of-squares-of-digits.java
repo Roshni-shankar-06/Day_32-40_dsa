@@ -13,6 +13,4 @@ class Solution {
             num--;
         }
 
-        return sb.toString();
-    }
-}
+   
