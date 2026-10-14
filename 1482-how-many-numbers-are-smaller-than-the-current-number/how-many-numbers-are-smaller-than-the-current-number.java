@@ -10,9 +10,4 @@ class Solution {
         // Each index i will now store how many numbers are <= i
         for (int i = 1; i < count.length; i++) {
             count[i] += count[i - 1];
-        }
-        
-        // Step 3: Populate the results array
-        int[] result = new int[nums.length];
-        for (int i = 0; i < nums.length; i++) {
-           
+     
