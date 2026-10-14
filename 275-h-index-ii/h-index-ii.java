@@ -21,7 +21,3 @@ class Solution {
             }
         }
         
-        // When left > right, 'n - left' represents the maximum valid h-index found
-        return n - left;
-    }
-}
