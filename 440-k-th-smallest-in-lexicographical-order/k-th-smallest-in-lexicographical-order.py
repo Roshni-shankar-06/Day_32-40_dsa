@@ -15,6 +15,3 @@ class Solution:
     return ans
 
   def _getGap(self, a: int, b: int, n: int) -> int:
-    gap = 0
-    while a <= n:
-   
