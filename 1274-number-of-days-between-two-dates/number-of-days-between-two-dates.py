@@ -8,6 +8,4 @@ class Solution:
     def daysFrom1971(date: str) -> int:
       year, month, day = map(int, date.split('-'))
       return (365 * (year - 1971) + sum(map(isLeapYear, range(1971, year))) +
-              sum(days[:month]) + day + (month > 2 and isLeapYear(year)))
-
-    return abs(daysFrom1971(date1) - daysFrom1971(date2))
+              
