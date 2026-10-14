@@ -9,8 +9,5 @@ class Solution {
         while (num > 0) {
             int digit = Math.min(9, sum);
             sb.append(digit);
-            sum -= digit;
-            num--;
-        }
-
+            s
    
