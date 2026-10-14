@@ -7,4 +7,4 @@ class Solution:
         k = len(nums) // 2
         
         # Step 3: Positive slots (second half) minus negative slots (first half)
-        return sum(squares[k:]) - sum(squares[:k])
+       
