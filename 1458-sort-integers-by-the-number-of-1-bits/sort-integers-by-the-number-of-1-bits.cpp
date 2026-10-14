@@ -5,8 +5,4 @@ class Solution {
       const int bitCount = bitset<32>(a).count();
       return pair<int, int>{bitCount, a};
     });
-    return arr;
-  }
-};
-
-
+    
