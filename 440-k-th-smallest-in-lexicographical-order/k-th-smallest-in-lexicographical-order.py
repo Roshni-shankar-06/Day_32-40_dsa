@@ -8,8 +8,6 @@ class Solution:
       if i + gap <= k:
         i += gap
         ans += 1
-      else:
-        i += 1
-        ans *= 10
+    
 
  
