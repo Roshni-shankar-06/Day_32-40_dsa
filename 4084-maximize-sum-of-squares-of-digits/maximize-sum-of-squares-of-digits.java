@@ -4,7 +4,4 @@ class Solution {
             return "";
         }
 
-        StringBuilder sb = new StringBuilder();
-
-        while (num > 0) {
-          
+       
