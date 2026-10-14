@@ -3,6 +3,4 @@ class Solution:
     n = len(nums)
     ans = 0
     # dp[i][j] := the number of subsequences end in nums[j] nums[i]
-    dp = [[0] * n for _ in range(n)]
-    numToIndices = collections.defaultdict(list)
-
+ 
