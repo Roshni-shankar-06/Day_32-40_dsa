@@ -15,9 +15,4 @@ public class Solution {
             for (int i = 0; i < 26; i++) {
                 if (count[i] > 0) {
                     sb.append((char) (i + 'a'));
-                    count[i]--;
-                }
-            }
-            
-            // Descending order pass: pick the largest available characters ('z' to 'a')
-          
+                
