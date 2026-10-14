@@ -7,7 +7,4 @@ class Solution {
         }
         
         // Step 2: Compute running sum of frequencies
-        // Each index i will now store how many numbers are <= i
-        for (int i = 1; i < count.length; i++) {
-            count[i] += count[i - 1];
      
