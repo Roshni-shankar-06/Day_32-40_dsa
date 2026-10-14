@@ -99,11 +99,4 @@ class LFUCache {
             minFreq = 1; // Resets minFreq to 1 because a new item always has frequency 1
             
             DoublyLinkedList list = freqMap.computeIfAbsent(1, k -> new DoublyLinkedList());
-            list.addNode(newNode);
-            curSize++;
-        }
-    }
-    
-    // Helper function to shift a node to its next higher frequency list
-    private void updateFrequency(Node node) {
-    
+           
