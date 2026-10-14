@@ -110,10 +110,4 @@ class LFUCache {
         DoublyLinkedList oldList = freqMap.get(oldFreq);
         oldList.removeNode(node);
         
-        // If the current minFreq list is completely cleared out, increment minFreq
-        if (oldFreq == minFreq && oldList.size == 0) {
-            minFreq++;
-        }
-        
-        node.freq++;
-        
+    
