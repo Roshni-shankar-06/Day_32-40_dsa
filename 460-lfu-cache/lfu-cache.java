@@ -88,10 +88,4 @@ class LFUCache {
             // Evict if cache is at maximum capacity
             if (curSize == capacity) {
                 DoublyLinkedList minFreqList = freqMap.get(minFreq);
-                Node toEvict = minFreqList.removeHead();
-                cache.remove(toEvict.key);
-                curSize--;
-            }
-            
-            // Insert the brand new node
-           
+               
