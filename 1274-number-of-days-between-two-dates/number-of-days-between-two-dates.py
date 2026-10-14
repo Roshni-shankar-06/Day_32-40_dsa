@@ -6,6 +6,4 @@ class Solution:
       return year % 4 == 0 and year % 100 != 0 or year % 400 == 0
 
     def daysFrom1971(date: str) -> int:
-      year, month, day = map(int, date.split('-'))
-      return (365 * (year - 1971) + sum(map(isLeapYear, range(1971, year))) +
-              
+     
