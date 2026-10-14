@@ -60,12 +60,4 @@ class LFUCache {
     private final Map<Integer, Node> cache;
     private final Map<Integer, DoublyLinkedList> freqMap;
 
-    public LFUCache(int capacity) {
-        this.capacity = capacity;
-        this.curSize = 0;
-        this.minFreq = 0;
-        this.cache = new HashMap<>();
-        this.freqMap = new HashMap<>();
-    }
-    
  
