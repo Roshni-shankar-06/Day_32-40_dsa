@@ -16,6 +16,3 @@ class Solution:
           for k in numToIndices[target]:
             if k < j:
               dp[i][j] += dp[j][k] + 1
-        ans += dp[i][j]
-
-    return ans
