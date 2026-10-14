@@ -9,7 +9,4 @@ class Solution {
             
             // Number of papers that have at least citations[mid] citations
             int paperCount = n - mid;
-            
-            if (citations[mid] == paperCount) {
-                return paperCount;
-            
+        
