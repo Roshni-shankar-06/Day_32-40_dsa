@@ -8,6 +8,4 @@ class Solution {
     int[] minIndices = new int[MAX_BIT];
     int[] optimalNums = new int[nums.size()];
 
-    for (final int num : nums)
-      for (int i = 0; i < MAX_BIT; i++)
-    
+   
