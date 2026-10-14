@@ -15,6 +15,4 @@ class Solution {
         // Step 3: Populate the results array
         int[] result = new int[nums.length];
         for (int i = 0; i < nums.length; i++) {
-            if (nums[i] == 0) {
-                result[i] = 0; // No numbers are smaller than 0
-            } els
+           
