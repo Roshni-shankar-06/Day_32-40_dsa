@@ -4,7 +4,7 @@ class Solution:
         squares = sorted(x * x for x in nums)
         
         # Step 2: Determine how many elements are subtracted (first half)
-        k = len(nums) // 2
+    
         
       
        
