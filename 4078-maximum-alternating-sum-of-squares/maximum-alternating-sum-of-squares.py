@@ -3,8 +3,6 @@ class Solution:
         # Step 1: Replace elements with their squared values and sort them
         squares = sorted(x * x for x in nums)
         
-        # Step 2: Determine how many elements are subtracted (first half)
-    
         
       
        
