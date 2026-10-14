@@ -6,5 +6,5 @@ class Solution:
         # Step 2: Determine how many elements are subtracted (first half)
         k = len(nums) // 2
         
-        # Step 3: Positive slots (second half) minus negative slots (first half)
+      
        
