@@ -94,9 +94,4 @@ class LFUCache {
             }
             
             // Insert the brand new node
-            Node newNode = new Node(key, value);
-            cache.put(key, newNode);
-            minFreq = 1; // Resets minFreq to 1 because a new item always has frequency 1
-            
-            DoublyLinkedList list = freqMap.computeIfAbsent(1, k -> new DoublyLinkedList());
            
