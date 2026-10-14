@@ -12,7 +12,4 @@ public class Solution {
         // Step 2: Simulate the process until the resulting string matches the original length
         while (sb.length() < totalLength) {
             // Ascending order pass: pick the smallest available characters ('a' to 'z')
-            for (int i = 0; i < 26; i++) {
-                if (count[i] > 0) {
-                    sb.append((char) (i + 'a'));
-                
+        
