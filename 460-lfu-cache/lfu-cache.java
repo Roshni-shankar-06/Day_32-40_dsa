@@ -80,8 +80,4 @@ class LFUCache {
     public void put(int key, int value) {
         if (capacity == 0) return;
         
-        if (cache.containsKey(key)) {
-            Node node = cache.get(key);
-            node.value = value;
-            updateFrequency(node);
-       
+    
