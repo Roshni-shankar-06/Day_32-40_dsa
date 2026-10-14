@@ -20,8 +20,4 @@ public class Solution {
             }
             
             // Descending order pass: pick the largest available characters ('z' to 'a')
-            for (int i = 25; i >= 0; i--) {
-                if (count[i] > 0) {
-                   n sb.toString();
-    }
-}
+          
