@@ -5,9 +5,7 @@ class Solution:
     i = 1
     while i < k:
       gap = self._getGap(ans, ans + 1, n)
-      if i + gap <= k:
-        i += gap
-        ans += 1
+     
     
 
  
