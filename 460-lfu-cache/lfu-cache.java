@@ -68,9 +68,4 @@ class LFUCache {
         this.freqMap = new HashMap<>();
     }
     
-    public int get(int key) {
-        if (!cache.containsKey(key)) {
-            return -1;
-        }
-        Node node = cache.get(key);
-      
+ 
