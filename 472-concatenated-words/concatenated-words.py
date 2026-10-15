@@ -2,7 +2,3 @@ import functools
 
 class Solution:
     def findAllConcatenatedWordsInADict(self, words: list[str]) -> list[str]:
-        wordSet = set(words)
-        
-        @functools.lru_cache(None)
-       
