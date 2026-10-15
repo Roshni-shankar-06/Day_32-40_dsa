@@ -13,7 +13,3 @@ class Solution:
         # Phase 2: Find the entrance to the cycle (the duplicate number)
         slow = nums[0]                 # Reset slow pointer to the start
         while slow != fast:
-            slow = nums[slow]          # Both move 1 step at a time
-            fast = nums[fast]
-            
-        return slow
