@@ -4,8 +4,4 @@ class Solution:
     n = len(s2)
     d = {}
     for i in range(n):
-      cnt = 0
-      j = i
-      for c in s1:
-        if c == s2[j]:
-         
+    
