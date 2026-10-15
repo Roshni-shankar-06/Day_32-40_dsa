@@ -12,7 +12,4 @@ class Solution:
         # Any live cell with two or three live neighbors lives on to the next
         # generation.
         if board[i][j] == 1 and (ones == 3 or ones == 4):
-          board[i][j] |= 0b10
-        # Any dead cell with exactly three live neighbors becomes a live cell,
-        # as if by reproduction.
-      
+       
