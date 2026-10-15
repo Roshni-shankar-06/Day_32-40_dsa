@@ -6,5 +6,4 @@ class Solution:
             seen = set()
             for j in range(i, n):
                 seen.add(nums[j])
-                res += len(seen) * len(seen)
-        return res
+               
