@@ -8,7 +8,4 @@ class Solution:
       j = i
       for c in s1:
         if c == s2[j]:
-          j += 1
-          if j == n:
-            cnt += 1
-           
+         
