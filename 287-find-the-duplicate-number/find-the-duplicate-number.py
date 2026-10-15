@@ -10,6 +10,4 @@ class Solution:
             if slow == fast:
                 break
         
-        # Phase 2: Find the entrance to the cycle (the duplicate number)
-        slow = nums[0]                 # Reset slow pointer to the start
-        while slow != fast:
+     
