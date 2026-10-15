@@ -11,8 +11,4 @@ class Solution:
           j += 1
           if j == n:
             cnt += 1
-            j = 0
-      d[i] = (cnt, j)
-
-    ans = 0
-   
+           
