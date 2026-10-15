@@ -15,7 +15,4 @@ class Solution:
           board[i][j] |= 0b10
         # Any dead cell with exactly three live neighbors becomes a live cell,
         # as if by reproduction.
-        if board[i][j] == 0 and ones == 3:
-          board[i][j] |= 0b10
-
-    for i in range(m):
+      
