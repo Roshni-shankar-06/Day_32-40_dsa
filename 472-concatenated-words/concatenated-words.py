@@ -5,7 +5,4 @@ class Solution:
         wordSet = set(words)
         
         @functools.lru_cache(None)
-        def isConcat(word: str) -> bool:
-            for i in range(1, len(word)):
-                prefix = word[:i]
-             
+       
