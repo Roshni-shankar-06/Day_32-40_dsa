@@ -15,6 +15,4 @@ class Solution:
       d[i] = (cnt, j)
 
     ans = 0
-    j = 0
-    for _ in range(n1):
-      cnt, j = d[j]
+   
