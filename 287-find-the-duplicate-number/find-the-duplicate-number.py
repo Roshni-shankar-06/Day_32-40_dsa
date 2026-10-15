@@ -6,8 +6,5 @@ class Solution:
         
         while True:
             slow = nums[slow]          # Moves 1 step
-            fast = nums[nums[fast]]    # Moves 2 steps
-            if slow == fast:
-                break
-        
+          
      
