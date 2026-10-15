@@ -18,6 +18,3 @@ class Solution:
     j = 0
     for _ in range(n1):
       cnt, j = d[j]
-      ans += cnt
-
-    return ans // n2
