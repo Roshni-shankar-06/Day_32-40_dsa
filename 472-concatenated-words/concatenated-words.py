@@ -11,6 +11,4 @@ class Solution:
                 suffix = word[i:]
                 if prefix in wordSet and (suffix in wordSet or isConcat(suffix)):
                     return True
-            return False
             
-        return [word for word in words if isConcat(word)]
