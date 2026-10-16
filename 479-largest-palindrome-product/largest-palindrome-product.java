@@ -12,9 +12,4 @@ class Solution {
       for (long j = upper; j * j >= cand; --j)
         if (cand % j == 0)
           return (int) (cand % MOD);
-    }
-
-    throw new IllegalArgumentException();
-  }
-
- 
+   
