@@ -37,12 +37,4 @@ class LazySegmentTree {
     if (end < l || start > r)
       return;
     if (start >= l && end <= r) {
-      lazy[i] = 1;
-      propagate(i, start, end);
-      return;
-    }
-    const int mid = (start + end) / 2;
-    updateRange(i * 2 + 1, start, mid, l, r);
-    updateRange(i * 2 + 2, mid + 1, end, l, r);
-    sums[i] = (sums[i * 2 + 1] + sums[i * 2 + 2]) % kMod;
-    squaredSums[i] = (squaredSums[i * 2 + 1] + squaredSums[i * 2 + 2]) % kMod;
+squaredSums[i * 2 + 1] + squaredSums[i * 2 + 2]) % kMod;
