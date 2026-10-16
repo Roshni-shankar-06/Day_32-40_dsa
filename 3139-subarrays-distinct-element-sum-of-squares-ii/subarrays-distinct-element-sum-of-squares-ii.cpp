@@ -60,11 +60,4 @@ class Solution {
 
     for (int r = 0; r < n; ++r) {
       const int l = lastSeen.contains(nums[r]) ? lastSeen[nums[r]] + 1 : 0;
-      tree.updateRange(l, r);
-      lastSeen[nums[r]] = r;
-      ans = (ans + tree.getTreeSquaredSums()) % kMod;
-    }
-
-    return ans;
-  }
-};
+     
