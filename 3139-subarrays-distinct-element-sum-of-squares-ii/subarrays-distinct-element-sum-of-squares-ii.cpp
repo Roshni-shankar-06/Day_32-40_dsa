@@ -30,11 +30,4 @@ class LazySegmentTree {
   vector<long> lazy;
   vector<long> sums;
   vector<long> squaredSums;
-
-  void updateRange(int i, int start, int end, int l, int r) {
-    if (lazy[i] > 0)
-      propagate(i, start, end);
-    if (end < l || start > r)
-      return;
-    if (start >= l && end <= r) {
-squaredSums[i * 2 + 1] + squaredSums[i * 2 + 2]) % kMod;
+]) % kMod;
