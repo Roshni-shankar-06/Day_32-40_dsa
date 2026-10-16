@@ -10,7 +10,4 @@ class Solution {
   private void dfs(TreeNode original, TreeNode cloned, TreeNode target) {
     if (ans != null)
       return;
-    if (original == null)
-      return;
-    if (original == target) {
-    
+
