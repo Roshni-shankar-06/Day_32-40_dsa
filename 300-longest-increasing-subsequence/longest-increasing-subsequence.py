@@ -5,6 +5,4 @@ class Solution:
     tails = []
 
     for num in nums:
-      if not tails or num > tails[-1]:
-        tails.append(num)
-      else:
+    
