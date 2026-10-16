@@ -4,4 +4,3 @@ SELECT
   Employees.name
 FROM Employees
 LEFT JOIN EmployeeUNI
-  USING (id);
