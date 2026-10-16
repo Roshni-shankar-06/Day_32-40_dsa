@@ -17,8 +17,4 @@ class Solution {
     throw new IllegalArgumentException();
   }
 
-  private long getPalindromeCandidate(int i) {
-    final String reversed = new StringBuilder().append(i).reverse().toString();
-    return Long.valueOf(i + reversed);
-  }
-}
+ 
