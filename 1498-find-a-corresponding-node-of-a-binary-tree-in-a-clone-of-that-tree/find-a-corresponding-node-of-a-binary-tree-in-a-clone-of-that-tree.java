@@ -16,7 +16,3 @@ class Solution {
       ans = cloned;
       return;
     }
-    dfs(original.left, cloned.left, target);
-    dfs(original.right, cloned.right, target);
-  }
-}
