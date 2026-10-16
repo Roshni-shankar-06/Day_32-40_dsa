@@ -1,4 +1,1 @@
-class Solution {
-  public final TreeNode getTargetCopy(final TreeNode original, final TreeNode cloned,
-                                      final TreeNode target) {
- 
+
