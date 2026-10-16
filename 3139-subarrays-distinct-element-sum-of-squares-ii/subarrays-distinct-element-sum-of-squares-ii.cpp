@@ -20,14 +20,3 @@ class LazySegmentTree {
       lazy[i * 2 + 2] += lazy[i];
   
 
-  int getTreeSquaredSums() {
-    return squaredSums[0];
-  }
-
- private:
-  const int kMod;
-  const int n;
-  vector<long> lazy;
-  vector<long> sums;
-  vector<long> squaredSums;
-]) % kMod;
