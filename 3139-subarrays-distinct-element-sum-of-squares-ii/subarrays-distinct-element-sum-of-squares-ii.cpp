@@ -46,12 +46,3 @@ class LazySegmentTree {
     updateRange(i * 2 + 2, mid + 1, end, l, r);
     sums[i] = (sums[i * 2 + 1] + sums[i * 2 + 2]) % kMod;
     squaredSums[i] = (squaredSums[i * 2 + 1] + squaredSums[i * 2 + 2]) % kMod;
-  }
-};
-
-class Solution {
- public:
-  int sumCounts(vector<int>& nums) {
-    constexpr int kMod = 1'000'000'007;
-    const int n = nums.size();
-   
