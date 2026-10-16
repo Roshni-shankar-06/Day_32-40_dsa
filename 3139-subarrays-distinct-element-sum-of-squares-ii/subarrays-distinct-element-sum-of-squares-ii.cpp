@@ -54,10 +54,4 @@ class Solution {
   int sumCounts(vector<int>& nums) {
     constexpr int kMod = 1'000'000'007;
     const int n = nums.size();
-    int ans = 0;
-    unordered_map<int, int> lastSeen;
-    LazySegmentTree tree(n, kMod);
-
-    for (int r = 0; r < n; ++r) {
-      const int l = lastSeen.contains(nums[r]) ? lastSeen[nums[r]] + 1 : 0;
-     
+   
