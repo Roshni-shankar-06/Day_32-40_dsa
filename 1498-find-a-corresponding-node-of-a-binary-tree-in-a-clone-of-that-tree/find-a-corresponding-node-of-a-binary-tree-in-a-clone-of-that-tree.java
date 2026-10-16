@@ -13,6 +13,4 @@ class Solution {
     if (original == null)
       return;
     if (original == target) {
-      ans = cloned;
-      return;
-    }
+    
