@@ -18,9 +18,7 @@ class LazySegmentTree {
     if (l < r) {
       lazy[i * 2 + 1] += lazy[i];
       lazy[i * 2 + 2] += lazy[i];
-    }
-    lazy[i] = 0;
-  }
+  
 
   int getTreeSquaredSums() {
     return squaredSums[0];
