@@ -9,7 +9,4 @@ class Solution {
 
     for (int i = upper; i > lower; --i) {
       final long cand = getPalindromeCandidate(i);
-      for (long j = upper; j * j >= cand; --j)
-        if (cand % j == 0)
-          return (int) (cand % MOD);
-   
+     
