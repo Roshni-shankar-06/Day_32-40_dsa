@@ -28,10 +28,4 @@ private:
         for (size_t i = 1; i < nums.size(); ++i) {
             if (nums[i] < nums[0]) {
                 left.push_back(nums[i]);
-            } else {
-                right.push_back(nums[i]);
-            }
-        }
-
-        long long ans = comb[nums.size() - 1][left.size()];
-        
+          
