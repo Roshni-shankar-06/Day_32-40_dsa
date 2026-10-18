@@ -8,6 +8,4 @@ class Solution:
 
     for i in range(len(arr), 0, -1):
       if count[i] == i:
-        return i
-
-    return -1
+      
