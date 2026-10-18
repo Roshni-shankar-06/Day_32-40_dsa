@@ -9,9 +9,4 @@ class FenwickTree {
     }
   }
 
-  int get(int i) const {
-    int sum = 0;
-    while (i > 0) {
-      sum += sums[i];
-      i -= lowbit(i);
-    }
+  
