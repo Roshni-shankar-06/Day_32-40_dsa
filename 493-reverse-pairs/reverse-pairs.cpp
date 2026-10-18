@@ -15,11 +15,3 @@ class FenwickTree {
       sum += sums[i];
       i -= lowbit(i);
     }
-    return sum;
-  }
-
- private:
-  vector<int> sums;
-
-  static inline int lowbit(int i) {
-
