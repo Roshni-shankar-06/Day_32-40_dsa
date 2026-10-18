@@ -17,11 +17,4 @@ private:
                 c[i][j] = (c[i - 1][j - 1] + c[i - 1][j]) % kMod;
             }
         }
-        return c;
-    }
-
-    long long ways(const vector<int>& nums) {
-        if (nums.size() <= 2) return 1;
-
-        vector<int> left;
-      
+   
