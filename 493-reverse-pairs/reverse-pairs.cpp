@@ -39,10 +39,4 @@ class Solution {
       tree.add(ranks.at(num * 2), 1);
     }
 
-    return ans;
-  }
 
- private:
-  unordered_map<long, int> getRanks(const vector<int>& nums) {
-    unordered_map<long, int> ranks;
-  
