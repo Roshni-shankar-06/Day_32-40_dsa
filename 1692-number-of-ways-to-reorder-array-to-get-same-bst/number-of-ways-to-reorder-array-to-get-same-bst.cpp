@@ -24,8 +24,4 @@ private:
         if (nums.size() <= 2) return 1;
 
         vector<int> left;
-        vector<int> right;
-        for (size_t i = 1; i < nums.size(); ++i) {
-            if (nums[i] < nums[0]) {
-                left.push_back(nums[i]);
-          
+      
