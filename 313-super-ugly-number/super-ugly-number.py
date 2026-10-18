@@ -10,8 +10,4 @@ class Solution:
         nexts[i] = nums[indices[i]] * primes[i]
       next = min(nexts)
       for i in range(k):
-        if next == nexts[i]:
-          indices[i] += 1
-      nums.append(next)
-
-    return nums[-1]
+        
