@@ -49,8 +49,4 @@ class Solution {
     for (const long num : nums)
       sorted.insert(num * 2);
     int rank = 0;
-    for (const long num : sorted)
-      ranks[num] = ++rank;
-    return ranks;
-  }
-};
+   
