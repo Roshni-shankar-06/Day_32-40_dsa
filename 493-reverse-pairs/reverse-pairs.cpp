@@ -29,9 +29,4 @@ class FenwickTree {
 class Solution {
  public:
   int reversePairs(vector<int>& nums) {
-    int ans = 0;
-    const unordered_map<long, int> ranks = getRanks(nums);
-    FenwickTree tree(ranks.size());
-
-    for (int i = nums.size() - 1; i >= 0; --i) {
 
