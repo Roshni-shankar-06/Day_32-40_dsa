@@ -8,8 +8,3 @@ public:
 private:
     static constexpr int kMod = 1'000'000'007;
     vector<vector<long long>> comb;
-
-    // Precompute combination table C(n, k) using Pascal's triangle
-    vector<vector<long long>> generate(int n) {
-        vector<vector<long long>> c(n, vector<long long>(n, 1));
-      
