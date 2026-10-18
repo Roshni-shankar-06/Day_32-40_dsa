@@ -22,11 +22,4 @@ class FenwickTree {
   vector<int> sums;
 
   static inline int lowbit(int i) {
-    return i & -i;
-  }
-};
-
-class Solution {
- public:
-  int reversePairs(vector<int>& nums) {
 
