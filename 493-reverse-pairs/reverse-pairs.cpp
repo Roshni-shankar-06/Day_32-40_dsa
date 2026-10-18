@@ -45,8 +45,4 @@ class Solution {
  private:
   unordered_map<long, int> getRanks(const vector<int>& nums) {
     unordered_map<long, int> ranks;
-    set<long> sorted(nums.begin(), nums.end());
-    for (const long num : nums)
-      sorted.insert(num * 2);
-    int rank = 0;
-   
+  
