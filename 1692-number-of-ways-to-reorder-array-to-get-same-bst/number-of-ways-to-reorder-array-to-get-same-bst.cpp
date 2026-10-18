@@ -34,8 +34,4 @@ private:
         }
 
         long long ans = comb[nums.size() - 1][left.size()];
-        ans = (ans * ways(left)) % kMod;
-        ans = (ans * ways(right)) % kMod;
-        return ans;
-    }
-};
+        
