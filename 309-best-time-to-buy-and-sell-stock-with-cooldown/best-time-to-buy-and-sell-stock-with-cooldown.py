@@ -8,6 +8,3 @@ class Solution:
       cache = sell
       sell = max(sell, hold + price)
       hold = max(hold, prev - price)
-      prev = cache
-
-    return sell
