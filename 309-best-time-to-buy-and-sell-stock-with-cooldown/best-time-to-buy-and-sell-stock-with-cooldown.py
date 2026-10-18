@@ -5,6 +5,4 @@ class Solution:
     prev = 0
 
     for price in prices:
-      cache = sell
-      sell = max(sell, hold + price)
-      hold = max(hold, prev - price)
+   
