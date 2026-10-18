@@ -12,9 +12,4 @@ private:
     // Precompute combination table C(n, k) using Pascal's triangle
     vector<vector<long long>> generate(int n) {
         vector<vector<long long>> c(n, vector<long long>(n, 1));
-        for (int i = 2; i < n; ++i) {
-            for (int j = 1; j < i; ++j) {
-                c[i][j] = (c[i - 1][j - 1] + c[i - 1][j]) % kMod;
-            }
-        }
-   
+      
