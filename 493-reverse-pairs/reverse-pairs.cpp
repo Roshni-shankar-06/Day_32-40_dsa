@@ -34,9 +34,4 @@ class Solution {
     FenwickTree tree(ranks.size());
 
     for (int i = nums.size() - 1; i >= 0; --i) {
-      const long num = nums[i];
-      ans += tree.get(ranks.at(num) - 1);
-      tree.add(ranks.at(num * 2), 1);
-    }
-
 
