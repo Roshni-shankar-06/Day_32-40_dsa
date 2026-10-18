@@ -6,8 +6,4 @@ class Solution:
 
     while len(nums) < n:
       nexts = [0] * k
-      for i in range(k):
-        nexts[i] = nums[indices[i]] * primes[i]
-      next = min(nexts)
-      for i in range(k):
-        
+    
